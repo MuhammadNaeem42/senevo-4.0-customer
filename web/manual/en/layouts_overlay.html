@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Senevo Documentation</title>
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <!-- favicon -->
+        <link href="../img/favicon.ico" rel="shortcut icon"/>
+
+        <!-- Bootstrap -->
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        
+        <!-- Stylesheets -->
+        <link href="../manual.css" rel="stylesheet" media="screen">
+        
+        <!-- META -->
+        <meta name="keywords" content="digital signage, signage, narrow-casting, xibo, open source, agpl, documentation" />
+        <meta name="description" content="Senevo is an open source digital signage solution. It supports all main media types and can be interfaced to other sources of data using CSV, Databases or RSS." />
+    </head>
+    <body data-toc="layouts">
+        <!-- Copyright 2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+        <nav id="top-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ss-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Senevo Documentation</a>
+                </div>
+            
+                <div class="collapse navbar-collapse" id="ss-navbar">
+                    <ul class="nav navbar-nav">
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="ss_body container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul id="side-nav" class="nav nav-pills nav-stacked">
+                        <li><a href="index.html" data-toc-name="tour">Tour</a></li><li><a href="users_administration.html" data-toc-name="users">Users</a></li><li><a href="displays.html" data-toc-name="displays">Displays</a></li><li><a href="layouts.html" data-toc-name="layouts">Layouts</a></li><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><ul>
+<li>
+<p><a href="layouts.html">Introduction</a></p>
+</li>
+<li>
+<p><a href="layouts_editor.html">Layout Editor</a></p>
+</li>
+<li>
+<p><a href="layouts_interactive_actions.html">Interactive Actions</a></p>
+</li>
+<li>
+<p><a href="layouts_templates.html">Templates</a></p>
+</li>
+<li>
+<p><a href="layouts_campaigns.html">Campaigns</a></p>
+</li>
+<li>
+<p class="active"><a href="layouts_overlay.html">Overlay Layouts<span class="glyphicon glyphicon-arrow-left you-are-here-arrow"></span></a></p>
+</li>
+</ul>
+</body></html>
+<li><a href="media_library.html" data-toc-name="media">Media</a></li><li><a href="media_modules.html" data-toc-name="widgets">Modules</a></li><li><a href="scheduling_events.html" data-toc-name="scheduling">Scheduling</a></li><li><a href="troubleshooting.html" data-toc-name="troubleshooting">Troubleshooting</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9" role="main">
+                    <h1 id="overlay_layouts">Overlay Layouts <a href="#overlay_layouts" class="header-link"><span class="glyphicon glyphicon-link"></span></a></h1>
+<p>Create an Overlay Layout to <a href="scheduling_events.html#content-creating-a-schedule">Schedule</a> to show on top of other Layouts in the schedule.</p>
+<blockquote class="tip"><p>Overlay Layouts can also be Scheduled to be used with Layouts inside a <a href="layouts_campaigns.html">Campaign</a>.</p>
+</blockquote>
+<p>Overlay Layouts remain on top while your normal scheduled content changes underneath. This is particularly useful for logos, important information or emergency notices for example.</p>
+<p><img src="img/v4_layouts_overlay.png" alt="Overlay Layout" /></p>
+<h2 id="create_an_overlay_layout">Create an Overlay Layout <a href="#create_an_overlay_layout" class="header-link"><span class="glyphicon glyphicon-link"></span></a></h2>
+<p>Overlay Layouts are created in exactly the same way as all other <strong>Layouts</strong>. Add content to fit around your existing designs so that your Overlay Layout can “sit on top” of other Layouts that are <strong>Scheduled</strong> at the same time as the Overlay.  Your Overlay Layout will display its all important content whilst the Layouts “underneath” play in rotation.</p>
+<blockquote class="tip"><p>Senevo will not render the background on Players when a Layout is scheduled as an Overlay Layout.</p>
+</blockquote>
+<h2 id="scheduling">Scheduling <a href="#scheduling" class="header-link"><span class="glyphicon glyphicon-link"></span></a></h2>
+<p>Overlay Layouts are selected as an <strong>Event type</strong> when <a href="scheduling_events.html">Scheduling an Event</a> and will behave differently to standard Layouts when Scheduled as an Overlay.</p>
+<p><img src="img/v4_layouts_overlay_event.png" alt="Overlay Event" /></p>
+<ul>
+<li>
+<h4>Refreshing Content</h4>
+</li>
+</ul>
+<p>When an Overlay Layout is scheduled it will render the <strong>Media content</strong> once and will not show refreshed content.</p>
+<blockquote class="tip"><p>A workaround to this would be to add a second Media Item to the Overlay Layout so that it loads item 2 and then reloads item 1 (with now refreshed content). This is particularly useful when creating an Overlay Layout which includes the Calendar or Ticker Widgets for example.</p>
+</blockquote>
+<ul>
+<li>
+<h4>Scheduling multiple Overlays</h4>
+</li>
+</ul>
+<p>Overlay Layouts do not appear one after the other in Scheduling but instead will <strong>stack</strong>.</p>
+<blockquote class="tip"><p><strong>Scenario:</strong></p>
+<p>2 Media items are required to ‘Overlay’ other Scheduled Events in the same area of the screen.</p>
+<p>Rather than creating 2 Overlay Layouts with the assigned Media, only 1 Overlay Layout should be created containing a <a href="media_playlists.html">Playlist</a> which would then contain the 2 Media items to cycle through.</p>
+</blockquote>
+<h4>Next…</h4>
+<p><a href="scheduling_events.html">Creating a Schedule</a></p>
+
+                </div>
+            </div>
+        </div> <!-- container--><footer class="ss_footer" role="contentinfo">
+    <div class="container">
+        <div class="pull-right">
+            <img class="img-responsive logo" src="../img/logo.png" alt="Senevo" />
+        </div>
+
+        <p class="ss_back_to_top">Back to Top</p>
+
+        <p>Designed and built by <a href="https://xibosignage.com/">Xibo Signage</a> for the <a href="https://xibo.org.uk" target="_blank">Xibo Project</a>.</p>
+        <p>Open Source Code licensed under <a href="" target="_blank">GNU Affero General Public License v3 or later</a>, documentation under <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/uk/" target="_blank">Creative Commons Licence</a>.</p>
+
+        <p class="ss_footer_links">Currently v4</p>
+
+        <p class="ss_languages"><a href="../en/index.html">en</a></p>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".ss-sidebar .list-group li").addClass("list-group-item");
+        $(".ss_body img").addClass("img-thumbnail");
+        $(".ss_body table").addClass("table");
+
+        // Set the selected page based on the TOC name
+        // Mark the appropriate top nav element as the selected page
+        $("#top-nav a").each(function() {
+            if ($(this).data().tocName == $("body").data().toc)
+                $(this).parent().addClass("active");
+        });
+
+        $(".ss_back_to_top").click(function() {
+            $('html, body').animate({scrollTop : 0},800);
+        });
+
+        if (inIframe()) {
+            console.log("In Frame");
+            $("#top-nav").css("display", "none");
+            $(".ss-sidebar").parent().css("display", "none");
+        }
+    });
+
+    function inIframe () {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+</script>
+</body>
+</html>

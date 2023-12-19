@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Senevo Documentation</title>
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <!-- favicon -->
+        <link href="../img/favicon.ico" rel="shortcut icon"/>
+
+        <!-- Bootstrap -->
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        
+        <!-- Stylesheets -->
+        <link href="../manual.css" rel="stylesheet" media="screen">
+        
+        <!-- META -->
+        <meta name="keywords" content="digital signage, signage, narrow-casting, xibo, open source, agpl, documentation" />
+        <meta name="description" content="Senevo is an open source digital signage solution. It supports all main media types and can be interfaced to other sources of data using CSV, Databases or RSS." />
+    </head>
+    <body data-toc="layouts">
+        <!-- Copyright 2020 Xibo Signage Ltd. Part of the Xibo Open Source Digital Signage Solution. Released under the AGPLv3 or later. -->
+        <nav id="top-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ss-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Senevo Documentation</a>
+                </div>
+            
+                <div class="collapse navbar-collapse" id="ss-navbar">
+                    <ul class="nav navbar-nav">
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="ss_body container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul id="side-nav" class="nav nav-pills nav-stacked">
+                        <li><a href="index.html" data-toc-name="tour">Tour</a></li><li><a href="users_administration.html" data-toc-name="users">Users</a></li><li><a href="displays.html" data-toc-name="displays">Displays</a></li><li><a href="layouts.html" data-toc-name="layouts">Layouts</a></li><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><ul>
+<li>
+<p class="active"><a href="layouts.html">Introduction<span class="glyphicon glyphicon-arrow-left you-are-here-arrow"></span></a></p>
+</li>
+<li>
+<p><a href="layouts_editor.html">Layout Editor</a></p>
+</li>
+<li>
+<p><a href="layouts_interactive_actions.html">Interactive Actions</a></p>
+</li>
+<li>
+<p><a href="layouts_templates.html">Templates</a></p>
+</li>
+<li>
+<p><a href="layouts_campaigns.html">Campaigns</a></p>
+</li>
+<li>
+<p><a href="layouts_overlay.html">Overlay Layouts</a></p>
+</li>
+</ul>
+</body></html>
+<li><a href="media_library.html" data-toc-name="media">Media</a></li><li><a href="media_modules.html" data-toc-name="widgets">Modules</a></li><li><a href="scheduling_events.html" data-toc-name="scheduling">Scheduling</a></li><li><a href="troubleshooting.html" data-toc-name="troubleshooting">Troubleshooting</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9" role="main">
+                    <h1 id="layouts">Layouts <a href="#layouts" class="header-link"><span class="glyphicon glyphicon-link"></span></a></h1>
+<p>A Layout is a complete screen design made up of content, which is then scheduled to one or multiple Displays. A Layout can contain 1 or more items of content to show using a combination of Elements, Widgets and Library Media.</p>
+<p>To show a sequence of multiple items (such as an image slideshow) on Layouts, a <a href="media_playlists.html">Playlist</a> is used.</p>
+<p>Senevo has no limit to the number of Layouts you can have in the system or the number a User can have.</p>
+<ul>
+<li>Layouts are managed by clicking on <strong>Layouts</strong> under the <strong>Design</strong> section of the main CMS menu:</li>
+</ul>
+<p><img src="img/v4_layouts_grid.png" alt="Layout Grid" /></p>
+<p><a href="https://test.xibo.org.uk/manual/en/tour_folders.html">Folders</a> are used to organise, search and easily <a href="https://test.xibo.org.uk/manual/en/users_features_and_sharing.html#content-share">Share</a> User objects with other Users/User Groups. Layouts saved to a Folder will inherit the access options applied to that Folder.</p>
+<blockquote class="tip"><p>If Users should also have access to the content of the Layout (image media files for example), ensure that these are also saved to the same Folder!</p>
+</blockquote>
+<ul>
+<li>Click on a Folder/sub-folder to search the contents or tick <strong>All Folders</strong> to include searching in the <strong>Root Folder</strong> and return results based on any filters applied to the grid.</li>
+</ul>
+<h2 id="adding_layouts">Adding Layouts <a href="#adding_layouts" class="header-link"><span class="glyphicon glyphicon-link"></span></a></h2>
+<p><strong>When should a User create a new Layout? When should a User add to an existing Layout?</strong>
+Layouts provide vast flexibility in the system. The recommended usage for a Layout is for it to only contain the design and media required for a set of related content that should be scheduled at the same time.</p>
+<blockquote class="tip"><p><strong>Scenario</strong>:
+You have a video showing a fire safety demonstration and a video showing an advert for an upcoming production - it would be natural to have separate Layouts for these.</p>
+</blockquote>
+<p>Click on the <strong>Add Layout</strong> button at the top of the grid to start creating new designs using the <a href="layouts_editor.html">Layout Editor.</a></p>
+<h2 id="using_templates">Using Templates <a href="#using_templates" class="header-link"><span class="glyphicon glyphicon-link"></span></a></h2>
+<p><a href="layouts_templates.html">Templates</a> are an easy way to speed up the design process and a great way to maintain a corporate image/standard.</p>
+<p>Templates can be selected from the <a href="layouts_editor.html#content-toolbar">Toolbar</a> inside the Layout Editor on adding a Layout.</p>
+<h2 id="resolutions">Resolutions <a href="#resolutions" class="header-link"><span class="glyphicon glyphicon-link"></span></a></h2>
+<p>Layouts are designed for an intended display resolution and will function best when shown on a <strong>Player</strong> with a matching resolution. If they are shown on a display that has a different resolution it will dynamically resize which may result in unused screen space.</p>
+<blockquote class="tip"><p>Sending a Player a Layout that has been designed with a 4:3 resolution which is connected to a 16:9 TV screen would result in two empty bars either side of your content.</p>
+</blockquote>
+<p>Resolutions are selected for a Layout from the properties panel in the <a href="layouts_editor.html">Layout Editor</a>.</p>
+<p>Senevo comes with a selection of default resolutions that cater for most digital signage applications.</p>
+<p>Resolutions can be added/edited and enabled/disabled by an Administrator from the <strong>Resolutions</strong> page under the <strong>Design</strong> section of the main CMS menu.</p>
+<h2 id="row_menu">Row menu <a href="#row_menu" class="header-link"><span class="glyphicon glyphicon-link"></span></a></h2>
+<p>All Layouts have a row menu where Users can access a list of actions/shortcuts.</p>
+<h3>Notable settings are listed below for a <strong>Published</strong> Layout:</h3>
+<h4>Design</h4>
+<p>Select to make design changes to the Layout in the Layout Editor.</p>
+<blockquote class="tip"><p>When in a Published status, the Layout Editor will open in a <strong>Read Only Mode</strong>. You will need to ‘Checkout’ the Layout to enable editing.</p>
+<p>To prevent two Users editing the same Layout concurrently, the Layout will lock for a User whilst editing.</p>
+</blockquote> 
+<h4>Checkout</h4>
+<p>To make edits to a Published Layout click to Checkout and create a draft. Once edited the Layout can be published to make the changes permanent overwriting the existing Layout. Discard will revert the Layout back to its original published state.</p>
+<blockquote class="tip"><p>Users can select the ‘auto submit’ check box so that this form is <a href="tour_cms_navigation.html#content-automatic-submission-of-forms">automatically sent</a> each time that <strong>Checkout</strong> is selected.</p>
+</blockquote>
+<blockquote class="tip"><p>Take your time with any edits you need to make as using <strong>Checkout</strong> ensures that no changes are made to your published version or shown on scheduled <strong>Displays</strong> until you choose to do so. <strong>Publish</strong> confirms changes have been made and will overwrite your published version. <strong>Discard</strong> will delete the draft with the published version remaining untouched.</p>
+</blockquote>
+<h4>Preview Layout</h4>
+<p>The Published <strong>Layout</strong> will play from start to finish to allow you to see how it will play once scheduled.</p>
+<blockquote class="tip"><p>Before the Layout can start all <strong>Media</strong> must be downloaded to your browser and verified so you may experience a slight delay whilst this is in process.</p>
+</blockquote>
+<h4>Assign to Campaign</h4>
+<p>Select to add the selected Layout to an existing <a href="layouts_campaigns.html">Campaign</a>.</p>
+<h4>Copy</h4>
+<p>Create copies of designed Layouts to easily make modifications. Choose to include all contained <strong>Media</strong> items, to use as a base for creating new Layouts to save time.</p>
+<blockquote class="tip"><p>Copying a Layout will create an exact copy at the last point the Layout was Published so ensure that you Publish a Layout before making a copy to preserve any changes!</p>
+</blockquote>
+<h4>Retire</h4>
+<p>Retire a Layout so it does not affect existing <strong>Schedules</strong>. A retired Layout will be hidden from new Scheduling options but will remain unaffected in existing Schedules and continue to show on Displays.</p>
+<h4>Export</h4>
+<p>Export the Layout including all associated Widgets/Media/DataSet structures to a ZIP file, so it can be easily shared.</p>
+<blockquote class="tip"><p>When exporting a Layout, all assigned <strong>Layout</strong>, <strong>Playlist</strong> and <strong>Media Tags</strong> will be exported. Select the <strong>Import Tags</strong> option to add these Tags on Layout Import.
+Add the ‘Export’ <a href="users_features_and_sharing.html">Feature</a> to allow a User/User Group to export regardless of the Share options that have been set for the Layout and its contents!</p>
+</blockquote>
+<h3>Notable settings are listed below for a <strong>Draft</strong> Layout:</h3>
+<h4>Publish</h4>
+<p>Select to <strong>Publish Now</strong> or select a date and time to set the Layout to Publish at a future date/time.</p>
+<blockquote class="tip"><p>Administrators can use the default setting on the CMS <strong>Settings</strong> page to automatically <strong>Publish</strong> draft Layouts 30 minutes after the last edit!</p>
+</blockquote>
+<h4>Discard</h4>
+<p>Discard all changes made to a draft and revert back to the previous Published version.</p>
+<h4>Preview Draft Layout</h4>
+<p>Play a Preview of your Layout in its current <strong>Draft</strong> status. Make any necessary adjustments before committing any changes by Publishing.</p>
+<blockquote class="tip"><p>Did you know…<strong>.Layouts</strong> and <strong>Library files</strong> can be <a href="displays.html#content-assign-files--layouts">Assigned</a> directly to a <strong>Display</strong> or <strong>Display Group</strong> so that they are always available in the local library of the Player. Useful for pre-loading a Layout ahead of time ready to be scheduled.</p>
+</blockquote>
+<blockquote class="tip"><p>Use the <strong>With Selected</strong> option at the bottom of the Layout <a href="tour_cms_navigation.html#content-grids">grid</a> to edit Tag assignments in bulk!</p>
+</blockquote>
+<h4>Next…</h4>
+<p><a href="layouts_editor.html">Layout Editor</a></p>
+
+                </div>
+            </div>
+        </div> <!-- container--><footer class="ss_footer" role="contentinfo">
+    <div class="container">
+        <div class="pull-right">
+            <img class="img-responsive logo" src="../img/logo.png" alt="Senevo" />
+        </div>
+
+        <p class="ss_back_to_top">Back to Top</p>
+
+        <p>Designed and built by <a href="https://xibosignage.com/">Xibo Signage</a> for the <a href="https://xibo.org.uk" target="_blank">Xibo Project</a>.</p>
+        <p>Open Source Code licensed under <a href="" target="_blank">GNU Affero General Public License v3 or later</a>, documentation under <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/uk/" target="_blank">Creative Commons Licence</a>.</p>
+
+        <p class="ss_footer_links">Currently v4</p>
+
+        <p class="ss_languages"><a href="../en/index.html">en</a></p>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".ss-sidebar .list-group li").addClass("list-group-item");
+        $(".ss_body img").addClass("img-thumbnail");
+        $(".ss_body table").addClass("table");
+
+        // Set the selected page based on the TOC name
+        // Mark the appropriate top nav element as the selected page
+        $("#top-nav a").each(function() {
+            if ($(this).data().tocName == $("body").data().toc)
+                $(this).parent().addClass("active");
+        });
+
+        $(".ss_back_to_top").click(function() {
+            $('html, body').animate({scrollTop : 0},800);
+        });
+
+        if (inIframe()) {
+            console.log("In Frame");
+            $("#top-nav").css("display", "none");
+            $(".ss-sidebar").parent().css("display", "none");
+        }
+    });
+
+    function inIframe () {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+</script>
+</body>
+</html>
